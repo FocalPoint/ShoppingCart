@@ -1,0 +1,4 @@
+<% @products.each do |product| %>
+                     <%= product.name %> | <%= product.description %> | <%= number_to_currency(product.price) %> ==> <%= link_to "Add to Cart", add_to_cart_url(product.id) %><br>
+
+<% end %>

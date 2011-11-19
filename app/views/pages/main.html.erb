@@ -1,0 +1,29 @@
+<div class="content-outer" id="header_home">
+				<div class="diamond-left">
+					<div class="diamond-right">
+						<div class="content-inner">													
+							<div class="top">
+								<div class="left">
+									
+								</div>
+								<p>
+								<div class="left">
+								  <% if session[:cart] %>
+								    <p><span class="or">  Your Cart Contents: </span><br>
+								      
+								       <span class="cufon">
+								         <%= render :partial => 'shopping' %>
+								       </span> </p>
+								  <% end %>
+									<p> <span class="or">Items for Sale: </span> <br> <span class="cufon">
+									 
+									 <%= render :partial => 'products' %>
+
+									 
+									</span> </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
